@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    </head>
+    <body>
+    
+      
+      
+      
+      
+      <div class="contenedor">
+        <canvas class="lienzo" id="myChart" width="190" height="190"></canvas> </div>
+    </body>
+    <script>
+        var ctx= document.getElementById("myChart").getContext("2d");
+        var myChart= new Chart(ctx,{
+            type:"line",
+            data:{
+                labels:[ '17/04','18/04','19/04','20/04','21/04','22/04','23/04'],
+                datasets:[{
+                        label:'Contagiados',
+                        data:[ 212,221, 225, 254 ,276 ,317 ,358 ],
+                        borderColor:[
+                            'rgb(229, 89, 50)',
+                        ],
+                        borderCapStyle:[
+                        'butt'
+                        ],
+                        borderWidth:['5'],
+                        pointBorderWidth:['15'],
+                        lineTension:['0'],
+                        
+                }]
+            },
+            
+        });
+    </script>
+  
+</html>

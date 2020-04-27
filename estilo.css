@@ -1,0 +1,11 @@
+.contenedor{
+  box-sizing:border-box;
+  float:left;
+  width:50%;
+  padding:10px;
+}
+.lienzo{ 
+  border:1px solid #d9d9d9;  
+}
+#lienzo1{float:right;}
+#myChart{width:50%;float:left;}
